@@ -479,6 +479,60 @@
           transition: none !important;
         }
       }
+
+      /* ---------- Mobile: full-screen, no card frame ---------- */
+      @media (max-width: 480px) {
+        body {
+          padding: 0;
+          align-items: stretch;
+          background: #f7f6f2;
+        }
+
+        .phone {
+          border-radius: 0;
+          box-shadow: none;
+          min-height: 100svh;
+          max-width: 100%;
+          background: #ffffff;
+        }
+
+        .phone::before,
+        .phone::after {
+          display: none;
+        }
+
+        .stage {
+          padding: 48px 20px 32px;
+        }
+
+        .logo-wrap {
+          width: 148px;
+          height: 148px;
+        }
+
+        .logo {
+          width: 128px;
+          height: 128px;
+        }
+
+        .title {
+          font-size: 21px;
+        }
+
+        .subtitle {
+          font-size: 13px;
+          max-width: 100%;
+        }
+
+        .btn {
+          min-height: 60px;
+          border-radius: 14px;
+        }
+
+        .btn::after {
+          border-radius: 15px;
+        }
+      }
     </style>
   </head>
   <body>
